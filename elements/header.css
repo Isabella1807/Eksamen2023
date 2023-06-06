@@ -1,0 +1,193 @@
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#headerContainer {
+    background-color: #2E362D;
+    /*border: 5px solid green;*/
+    box-sizing: border-box;
+    height: 123px;
+    width: 100%;
+    transition: height 0.5s ease-out;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.75);
+}
+
+#headerContainer.slim {
+    height: 80px;
+}
+
+main {
+    margin-top: 123px;
+    background-color: white;
+}
+
+#navMenu {
+    /*border: 5px solid blue;*/
+    padding: 0 20px 0 20px;
+    width: 100%;
+}
+
+#navMenuItems {
+    /*border: 2px solid red;*/
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-content: center;
+    /*width: 100%;*/
+}
+
+#navLogoImg{
+    width: 100px;
+    height: 80px;
+}
+
+#navListContainer {
+    /*border: 2px solid green;*/
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#navListItems {
+    /*border: 2px solid pink;*/
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 20px 0 20px;
+    width: 100%;
+}
+
+#navListItems li {
+    /*border: 2px solid yellow;*/
+    padding: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#navListItems li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+#navListItems li a:hover {
+    cursor: pointer;
+}
+
+#navLogo p {
+    font-size: 45px;
+    margin: 0;
+}
+
+#searchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myInput {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#burgerMenu {
+    display: none;
+}
+
+#mobileNavbarContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+#myMobileNavBar {
+    color: black;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    top: -130px;
+    right: 0;
+    transition: top 0.5s;
+    z-index: -5;
+    text-align: center;
+
+
+}
+#myMobileNavBar.open li {
+    padding-top: 10px;
+}
+
+#myMobileNavBar.open a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+#myMobileNavBar.open .liLine {
+    height: 2px;
+    width: 25%;
+    background: #2E362D;
+    margin: 0 auto 10px auto;
+}
+@media only screen and (max-width: 1130px) {
+    #navListContainer {
+        display: none;
+    }
+
+    #burgerMenu {
+        /*border: 2px solid yellow;*/
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: right;
+    }
+
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    #myMobileNavBar.open {
+        top: 0;
+    }
+
+    #searchContainer {
+        justify-content: right;
+    }
+
+    #myInput {
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    #burgerMenuIcon {
+        /*border: 2px solid yellow;*/
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+    }
+
+    #burgerMenuIcon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #myMobileNavBarItems li a{
+        text-decoration: none;
+    }
+
+    #navLogo {
+        text-align: center;
+        font-size: 30px;
+    }
+}
