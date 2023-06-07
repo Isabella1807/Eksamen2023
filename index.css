@@ -30,6 +30,32 @@
     font-size: 60px;
 }
 
+#indexBannerButton{
+    border: 2px solid gray;
+    margin: 30px auto 0 auto;
+    background-color: white;
+    height: 35px;
+    color: black;
+    width: fit-content;
+    padding: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.75);
+}
+#indexBannerButton:hover{
+    font-style: italic;
+    font-size: 22px;
+}
+
+#indexBannerCallToActionButton {
+    text-decoration: none;
+}
+
 /********************MAIN INFO******************/
 
 .contentImageContainer img {
