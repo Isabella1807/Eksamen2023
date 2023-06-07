@@ -1,4 +1,4 @@
-/*******************BANNER***********************/
+/******************* BANNER ***********************/
 #indexBannerContainer {
     /*border: 4px solid red;*/
     background-image: url("images/p4billeder/forside4f.jpg");
@@ -56,7 +56,7 @@
     text-decoration: none;
 }
 
-/********************MAIN INFO******************/
+/******************** MAIN INFO ******************/
 
 .contentImageContainer img {
     object-fit: cover;
@@ -88,7 +88,7 @@
     font-size: 30px;
 }
 
-/*******************MY CALCULATOR*********************/
+/******************* MY CALCULATOR *********************/
 .indexCalculatorInputContainer{
     /*border: 2px solid green;*/
     display: flex;
@@ -111,9 +111,23 @@
     margin: 20px 0 20px 0;
 }
 
-.indexCalculatorCarOfferContainers{
-    border: 2px solid red;
+/**************** MY CARS LIST ********************/
+#indexCarsContainer{
+    display: flex;
 }
+
+.indexCarsImageContainer{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.indexCarsImageContainer img{
+    width: 100%;
+    height: 100%;
+    
+}
+
 
 @media only screen and (max-width: 1050px) { /*was 1550*/
     #mainInfoContainers .contentContainers {

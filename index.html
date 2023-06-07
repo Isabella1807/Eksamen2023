@@ -102,18 +102,21 @@
                 <h1>Beregn din besparelse her!</h1>
                 <p>Indtast dit nuværende forbrug</p>
                 <div class="indexCalculatorInputContainer">
-                    <input type="number" value="20" class="indexCalculatorInput" id="indexKMLInput" placeholder="Din nuværende bils Km/L">
+                    <input type="number" value="20" class="indexCalculatorInput" id="indexKMLInput"
+                           placeholder="Din nuværende bils Km/L">
                     <p>Km/L benzin</p>
                 </div>
 
                 <div class="indexOtherCalculatorContainerStuff">
                     <div class="indexCalculatorInputContainer">
-                        <input type="number" value="24" class="indexCalculatorInput" id="indexKMDagInput" placeholder="Daglig kørsel i km">
+                        <input type="number" value="24" class="indexCalculatorInput" id="indexKMDagInput"
+                               placeholder="Daglig kørsel i km">
                         <p>Km/dag</p>
                     </div>
 
                     <div class="indexCalculatorInputContainer">
-                        <input type="number" value="5" class="indexCalculatorInput" id="indexPrWeekInput" placeholder="Ugentlig kørsel">
+                        <input type="number" value="5" class="indexCalculatorInput" id="indexPrWeekInput"
+                               placeholder="Ugentlig kørsel">
                         <p>gange om ugen</p>
                     </div>
                 </div>
@@ -124,23 +127,51 @@
                 <div>
                     <div class="indexOtherCalculatorContainerStuff">
                         <div class="indexCalculatorInputContainer">
-                            <input type="text" class="indexCalculatorInput" placeholder="2">
+                            <input type="number" class="indexCalculatorInput" value="2.2" placeholder="Kroner pr kilowatt time" id="krPrKwh">
                             <p>kr./Kwh</p>
                         </div>
                         <div class="indexCalculatorInputContainer">
-                            <input type="text"class="indexCalculatorInput" placeholder="16,28">
+                            <input type="number" class="indexCalculatorInput" value="16.28" placeholder="Kroner pr Liter benzin" id="krPrLGas">
                             <p>kr./L benzin</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
-                            <img src="#" alt="" class="indexCalculatorCarOfferContainers">
+                    <div id="indexCarsContainer">
+                        <div class="carsOffersContainers">
+                            <div class="indexCarsImageContainer">
+                                <img src="images/cars/Tesla.PNG" alt="Billede af Tesla Model Y"
+                                     class="indexCalculatorCarOfferContainers">
+                            </div>
+                            <div class="indexCarsTextContainer">
+                                <p>Din årlige besparelse:</p>
+                                <p>22000 KR</p>
+                                <p>Pris:</p>
+                                <p>382000 KR</p>
+                            </div>
                         </div>
-                        <div>
-                            <img src="#" alt="" class="indexCalculatorCarOfferContainers">
+
+                        <div class="carsOffersContainers">
+                            <div class="indexCarsImageContainer">
+                                <img src="images/cars/Kia.PNG" alt="Billede af Kia EV6"
+                                     class="indexCalculatorCarOfferContainers">
+                            </div>
+                            <div class="indexCarsTextContainer">
+                                <p>Din årlige besparelse:</p>
+                                <p>22000 KR</p>
+                                <p>Pris:</p>
+                                <p>382000 KR</p>
+                            </div>
                         </div>
-                        <div>
-                            <img src="#" alt="" class="indexCalculatorCarOfferContainers">
+                        <div class="carsOffersContainers">
+                            <div class="indexCarsImageContainer">
+                                <img src="images/cars/BMW.PNG" alt="Billede af BMW i7"
+                                     class="indexCalculatorCarOfferContainers">
+                            </div>
+                            <div class="indexCarsTextContainer">
+                                <p>Din årlige besparelse:</p>
+                                <p>22000 KR</p>
+                                <p>Pris:</p>
+                                <p>382000 KR</p>
+                            </div>
                         </div>
                     </div>
                 </div>
