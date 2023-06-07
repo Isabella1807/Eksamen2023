@@ -37,7 +37,7 @@
     height: 35px;
     color: black;
     width: fit-content;
-    padding: 5px;
+    padding: 1rem 3.5rem;
     font-size: 20px;
     display: flex;
     justify-content: center;
@@ -125,7 +125,7 @@
 .indexCarsImageContainer img{
     width: 100%;
     height: 100%;
-    
+
 }
 
 
