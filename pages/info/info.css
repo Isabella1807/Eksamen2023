@@ -217,7 +217,12 @@ p, ul{
 }
 
 .image-container {
-    max-width: 100%;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
 	height: 350px;
 	border-bottom: 2px black;
 	border-top: 2px black;
@@ -892,4 +897,65 @@ div.desc {
   right: 10px;
 }
 
+}
+
+
+/************Isa added************/
+#infoMainContainer{
+	margin: 100px;
+}
+
+.infoMainContentContainer{
+	margin-top: 100px;
+}
+#infoMainContainer .infoMainContentContainer:nth-child(even) {
+	flex-direction: row-reverse;
+}
+#infoMainContainer .infoMainContentContainer:nth-child(odd) .infoContentImageContainer {
+	margin-right: 50px;
+}
+.infoMainContentContainer{
+	display: flex;
+}
+.infoHeadingElement{
+	font-size: 80px;
+}
+.infoTextElement{
+	font-size: 30px;
+}
+
+.infoChargersList li{
+	font-size: 30px;
+}
+
+.infoContentImageContainer img{
+	object-fit: cover;
+	width: 500px;
+	height: 350px;
+	margin-right: 100px;
+}
+
+#infoFirstMainElement{
+	margin-bottom: 50px;
+	padding-top: 50px;
+}
+
+#infoToTopButton{
+	/*border: 2px solid red;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#infoToTopButton p {
+	font-size: 30px;
+	color: black;
+	font-style: italic;
+}
+
+#infoToTopButton:hover p{
+	font-style: normal;
+}
+
+#infoToTopButtonLink{
+	text-decoration: none;
 }

@@ -81,13 +81,14 @@
     </div>
 </header>
 <main>
-    <div class="greenCarQuestienBox">
-        <div class="greenCarQuestienImg">
+    <div id="infoMainContainer">
+    <div class="infoMainContentContainer" id="infoFirstMainElement">
+        <div class="infoContentImageContainer">
             <img class="trees" src="infoimg/trees.jpg" alt="trees">
         </div>
-        <div class="greenCarQuestienTekst">
-            <h1 class="greenCarQuestienH1">Hvor grøn er en elbil egentlig?</h1>
-            <p class="greenCarQuestien">
+        <div class="infoContentTextContainer">
+            <h1 class="infoHeadingElement">Hvor grøn er en elbil egentlig?</h1>
+            <p class="infoTextElement">
                 Du er sandsynligvis opmærksom på at elbiler ingen CO2 udleder under kørsel, dog udledes der en masse CO2
                 under konstruktionen af en elbil. Afhængigt af hvor strømmen til produktionen og opladning kommer fra,
                 kan elbilen også blive mindre eller mere grøn. <br>
@@ -126,69 +127,45 @@
         </div>
     </div>
 
-    <div>
-        <div class="carPriceBox">
-            <div class="carPriceImg">
+        <div class="infoMainContentContainer">
+            <div class="infoContentImageContainer">
                 <img class="info" src="infoimg/info.jpg" alt="trees">
             </div>
-            <div class="carPriceBoxTekst">
-                <h1 class="carPriceH1">Hvad koster det at lade din elbil op?</h1>
-                <p class="carPrice">
-                    Prisen af kWh svinger lidt, men regn med at betale mellem 3,19 kr. og 6,50 kr. pr. kWh, når du lader
-                    din
-                    elbil op ved en ladestander uden abonnement.
+            <div class="infoContentTextContainer">
+                <h1 class="infoHeadingElement">Hvad koster det at lade din elbil op?</h1>
+                <p class="infoTextElement">
+                    Prisen af kWh svinger lidt, men regn med at betale mellem 3,19 kr. og 6,50 kr. pr. kWh, når du lader din elbil op ved en ladestander uden abonnement.
                 </p>
             </div>
         </div>
-
-        <div class="infoChargersBox">
-            <div class="infoChargersImg">
+        <div class="infoMainContentContainer">
+            <div class="infoContentImageContainer">
                 <img class="chargers" src="infoimg/chargers.jpg" alt="trees">
             </div>
-            <div class="infochargersTekst">
-                <h1 class="infoChargersH1">Hvad skal du vide om ladestandere?</h1>
-                <p class="infoChargers">
+            <div class="infoContentTextContainer">
+                <h1 class="infoHeadingElement">Hvad skal du vide om ladestandere?</h1>
+                <p class="infoTextElement">
                     Det nemmeste er at have sin egen ladestander, men hvis der ikke er mulighed for det, er der flere
-                    muligheder for offentlige ladestander.
-                    <br>
-                    I Danmark er der forskellige udbydere af ladestander til elbiler.
-                    <br>
+                    muligheder for offentlige ladestander.<br>
+                    I Danmark er der forskellige udbydere af ladestander til elbiler.<br>
                     Disse udbydere er:
-                </p>
                 <ul class="infoChargersList">
+                    <br>
                     <li>E.on har over 1800 ladestander i hele landet.</li>
                     <li>Clever har over 1000 ladestander i hele landet.</li>
                     <li>Ionity har 8 ladestander langs motorveje.</li>
-                    <li>Tesla har 15 Supercharger i landet - virker kun til Tesla biler.</li>
+                    <li>Tesla har 15 Supercharger i landet.</li>
                 </ul>
-                <h3 class="infoChargersH3">Man kan finde placeringen af ladestanderne på den enkelte udbyders
-                    hjemmeside.</h3>
-                <p class="infoChargers">
-                    Alle kort på hjemmesiderne viser, om deres ladestationer er ledige, optaget eller er under
-                    reparation.
-                    <br>
-                    Samt viser de hvilken type ladestander det er, og hvilken hastighed den oplader med, er det 22 kW
-                    eller
-                    115 kW.
-                    <br><br>
-                    De fleste udbyder tilbyder også en app til at finde deres stationer på farten.
                 </p>
-                <div class="providersLogo">
-                    <img src="infoimg/e.on.png" alt="e.on">
-                    <img src="infoimg/clever.png" alt="clever">
-                    <img src="infoimg/ionity.png" alt="ionity">
-                    <img src="infoimg/tesla.png" alt="tesla">
-                </div>
             </div>
         </div>
-
-        <div class="abonnementBox">
-            <div class="abonnementImg">
+        <div class="infoMainContentContainer">
+            <div class="infoContentImageContainer">
                 <img class="abonnementCar" src="infoimg/abonnementcar.jpg" alt="charger">
             </div>
-            <div class="abonnementTekst">
-                <h1 class="abonnementH1">Abonnementer til ladestationer</h1>
-                <p class="abonnement">
+            <div class="infoContentTextContainer">
+                <h1 class="infoHeadingElement">Abonnementer til ladestationer</h1>
+                <p class="infoTextElement">
                     Hvis du ikke har en ladeboks i hjemmet, kan det være en god ide at investere i et abonnement hos en
                     ladestation.<br>
                     Vær dog opmærksom på at abonnementer hos en ladestation kun gælder hos den specifikke udbyder og der
@@ -200,19 +177,60 @@
                 </p>
             </div>
         </div>
-
-        <div class="chargingTypesBox">
-            <div class="chargingTypesTekst">
-                <h1 class="chargingTypesH1">Ladestationer</h1>
-                <p class="chargingTypes">
+        <div class="infoMainContentContainer">
+            <div class="infoContentImageContainer">
+                <img class="abonnementCar" src="infoimg/abonnementcar.jpg" alt="charger">
+            </div>
+            <div class="infoContentTextContainer">
+                <h1 class="infoHeadingElement">Ladestationer</h1>
+                <p class="infoTextElement">
                     Når du kører som bilist i en elbil, er der forskellige ladestationer, du vil møde i det danske
                     landskab.<br>
                     Disse ladestationer gør sig til forskel på, opladnings hastigheden, stiktypen der bruges eller
                     størrelsen på stationen.
                 </p>
             </div>
+        </div>
+
+        <a href="#infoFirstMainElement" id="infoToTopButtonLink">
+            <div id="infoToTopButton">
+                <p>Til toppen</p>
+            </div>
+        </a>
     </div>
 </main>
-<footer id="footer"></footer>
+
+<footer id="footer">
+    <div id="footerItemsContainer">
+        <div id="footerLeft">
+            <p class="footerHeading">GreenWheels</p>
+            <div id="line1"></div>
+            <p>GreenWheels er en elbil informationssite.<br> Vi bestræber os efter at give dig den nyeste viden indenfor
+                elbiler og hvorfor det er rigtig vigtig at få flere over på elbil-vognen.
+                <br>Vi skal nå vores klima mål til 2030 og derfor har vi brug for så mange som muligt springer ud i
+                noget nyt og bedre indenfor bil verden. </p>
+        </div>
+        <div id="lineMiddle"></div>
+        <div id="footerRight">
+            <div id="footerMediaContainer">
+                <p class="footerHeading">Sociale medier</p>
+                <div id="footerMediaIconsContainer">
+                    <img src="../../images/Assets/fb.png" alt="Sociale medier">
+                    <img src="../../images/Assets/insta.png" alt="Sociale medier">
+                    <img src="../../images/Assets/T.png" alt="Sociale medier">
+                    <img src="../../images/Assets/twitter.png" alt="Sociale medier">
+                </div>
+            </div>
+            <div id="line2"></div>
+            <p>Tag dig endelig din tid til at besøge vores sociale medier. Vi har både facebook, instragram, TikTok samt
+                twitter I brug. Vi Mener de sociale medier er en vigtig platform for at få vores budskab formidlet ud
+                til alle aldre.<br> Det er derfor vi har valgt at sprede os ud på flere medier for at ramme flest
+                mulige.
+
+                Giv os et follow på de diverse medier og aldrig mis de nyeste informationer og nyheder fra GreenWheels
+            </p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
