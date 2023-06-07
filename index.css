@@ -49,7 +49,7 @@
 }
 #indexBannerButton:hover{
     font-style: italic;
-    font-size: 22px;
+    cursor: pointer;
 }
 
 #indexBannerCallToActionButton {

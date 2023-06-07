@@ -945,6 +945,8 @@ div.desc {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 20px;
+	padding-bottom: 10px;
 }
 #infoToTopButton p {
 	font-size: 30px;
