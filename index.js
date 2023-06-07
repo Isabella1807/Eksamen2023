@@ -1,5 +1,7 @@
 console.log("index JS virker");
 
+/********* Calculator ************/
+
 const calculatedContainer = document.getElementById("indexCalculatedInformationContainer");
 
 const kmPrL = document.getElementById("indexKMLInput");
@@ -17,3 +19,29 @@ const addTextToInfoContainer = () => {
 kmPrL.addEventListener('input', addTextToInfoContainer);
 kmPrDay.addEventListener('input', addTextToInfoContainer);
 tripsPrWeek.addEventListener('input', addTextToInfoContainer);
+
+/********** Cars ***********/
+
+const listOfCars = [
+    {
+        img: "link",
+        name: "BMW i7",
+        priceDKK: 1559000,
+        WhPrKm: 184,
+        distanceKm: 625,
+    },
+    {
+        img: "link",
+        name: "Tesla Model Y",
+        priceDKK: 382000,
+        WhPrKm: 148,
+        distanceKm: 488,
+    },
+    {
+        img: "link",
+        name: "Kia EV6",
+        priceDKK: 404000,
+        WhPrKm: 180,
+        distanceKm: 528,
+    },
+]
