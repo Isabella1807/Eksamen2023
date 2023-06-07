@@ -7,29 +7,34 @@ const calculatedContainer = document.getElementById("indexCalculatedInformationC
 const kmPrL = document.getElementById("indexKMLInput");
 const kmPrDay = document.getElementById("indexKMDagInput");
 const tripsPrWeek = document.getElementById("indexPrWeekInput");
-const krPrKwH = document.getElementById("krPrKwh")
-const krPrLGas = krPrKwH.getElementById("krPrLGas");
+const krPrKwH = document.getElementById("krPrKwh");
+const krPrLGas = document.getElementById("krPrLGas");
 
 const addTextToInfoContainer = () => {
     const weeklyKM = kmPrDay.value * tripsPrWeek.value;
     const weeklyGasL = weeklyKM / kmPrL.value;
     const yearlyKM = weeklyKM * 52;
     const yearlyGas = weeklyGasL * 52;
-    calculatedContainer.innerHTML = `Du kører i dag ${weeklyKM} km om ugen på ${weeklyGasL} liter benzin. Dette svarer til ${yearlyKM} km om året eller ${yearlyGas} liter benzin om året`;
+    calculatedContainer.innerHTML = `Du kører i dag ${Math.round(weeklyKM)} km om ugen på ${Math.round(weeklyGasL)} liter benzin. Dette svarer til ${Math.round(yearlyKM)} km om året eller ${Math.round(yearlyGas)} liter benzin om året`;
+
 
     // hgjhg jhgjhg gjhgj
-    for (let i = 0; i < listOfCars.length; i++){
+    const gasCarYearlyCost = yearlyGas * krPrLGas.value;
+
+    for (let i = 0; i < listOfCars.length; i++) {
         const car = listOfCars[i];
-
-
+        const electricYearlyCost = ((yearlyKM * car.WhPrKm) / 1000) * krPrKwH.value;
+        const difference = gasCarYearlyCost - electricYearlyCost;
+        car.saving = Math.round(difference);
     }
-
     addCarOptionsToContainer();
 }
 
 kmPrL.addEventListener('input', addTextToInfoContainer);
 kmPrDay.addEventListener('input', addTextToInfoContainer);
 tripsPrWeek.addEventListener('input', addTextToInfoContainer);
+krPrKwH.addEventListener('input', addTextToInfoContainer);
+krPrLGas.addEventListener('input', addTextToInfoContainer);
 
 /********** Cars ***********/
 
@@ -67,7 +72,7 @@ const addCarOptionsToContainer = () => {
 
     carsContainer.innerHTML = '';
 
-    for (let i = 0; i < listOfCars.length; i++){
+    for (let i = 0; i < listOfCars.length; i++) {
         const car = listOfCars[i];
 
         carsContainer.innerHTML += `
@@ -87,4 +92,4 @@ const addCarOptionsToContainer = () => {
     }
 }
 
-addCarOptionsToContainer();
+addTextToInfoContainer();
