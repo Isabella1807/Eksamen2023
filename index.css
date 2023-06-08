@@ -1,7 +1,7 @@
 /******************* BANNER ***********************/
 #indexBannerContainer {
     /*border: 4px solid red;*/
-    background-image: url("images/p4billeder/forside4f.jpg");
+    background-image: url("images/cars/ElCarGirl.jpg");
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -18,16 +18,24 @@
 
 #indexBannerTextContainer {
     /*border: 2px solid blue;*/
+    width: 50%;
+    padding: 80px 50px 80px 50px;
     color: white;
     text-align: center;
+    background-color: #2e362d;
+    /*padding-bottom: 15px;*/
+    border-radius: 20px;
 }
 
 #indexBannerTextContainer h1 {
     font-size: 155px;
+    font-weight: bold;
 }
 
 #indexBannerTextContainer h2 {
     font-size: 60px;
+    font-weight: 900;
+
 }
 
 #indexBannerButton{
@@ -35,10 +43,10 @@
     margin: 30px auto 0 auto;
     background-color: white;
     height: 35px;
-    color: black;
     width: fit-content;
     padding: 1rem 3.5rem;
-    font-size: 20px;
+    font-size: 25px;
+    color: #2b2927;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +133,7 @@
 }
 
 .indexCarsImageContainer{
-    width: 60px;
+    width: 600px;
     height: 300px;
     object-fit: cover;
 }
@@ -157,6 +165,27 @@
     font-weight: bold;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 1770px) {
+    #indexBannerTextContainer h1{
+        font-size: 100px;
+    }
+
+    #indexBannerTextContainer h2{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    #indexBannerTextContainer h1{
+        font-size: 80px;
+    }
+
+    #indexBannerTextContainer h2{
+        font-size: 35px;
+    }
+}
+
 @media only screen and (max-width: 1050px) { /*was 1550*/
     #mainInfoContainers .contentContainers {
         /*border: 2px solid red;*/
@@ -171,40 +200,24 @@
         /*border: 2px solid blue;*/
         margin: auto;
     }
-}
 
-@media only screen and (max-width: 1040px) {
-    #indexBannerTextContainer {
-        transform: scale(0.7);
+    #indexBannerTextContainer h1{
+        font-size: 70px;
     }
-    #indexBannerContainer {
-        display: flex;
-        justify-content: center;
-    }
-    #indexBannerContainer {
-        background-image: url("images/p4billeder/kontaktos3f.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
+
+    #indexBannerTextContainer h2{
+        font-size: 35px;
     }
 }
-
-@media only screen and (max-width: 830px) {
-    #indexBannerContainer {
-        background-image: url("images/p4billeder/kontaktos3f.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
+@media only screen and (max-width: 850px){
+    #indexBannerTextContainer h1{
+        font-size: 60px;
     }
-    #indexBannerTextContainer {
-        transform: scale(0.5);
+
+    #indexBannerTextContainer h2{
+        font-size: 25px;
     }
 }
-
 @media only screen and (max-width: 770px){
     #mainInfoContainers{
         margin: 30px;
@@ -224,6 +237,16 @@
         margin-top: 50px;
     }
 }
+
+@media only screen and (max-width: 730px){
+    #indexBannerTextContainer h1{
+        font-size: 50px;
+    }
+
+    #indexBannerTextContainer h2{
+        font-size: 20px;
+    }
+}
 @media only screen and (max-width: 600px){
     .contentTextContainer h1 {
         font-size: 30px;
@@ -239,10 +262,42 @@
     #mainInfoContainers .contentContainers{
         margin-top: 30px;
     }
+
+    #indexBannerTextContainer h1{
+        font-size: 40px;
+    }
+
+    #indexBannerTextContainer h2{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 530px){
+    #indexBannerButton {
+        font-size: 20px;
+    }
 }
 
+
 @media only screen and (max-width: 460px) {
-    #indexBannerTextContainer {
-        transform: scale(0.3);
+    #indexBannerTextContainer h1{
+        font-size: 40px;
+    }
+
+    #indexBannerTextContainer h2{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    #indexBannerTextContainer h1{
+        font-size: 30px;
+    }
+
+    #indexBannerTextContainer h2{
+        font-size: 15px;
+    }
+
+    #indexBannerButton {
+        font-size: 15px;
     }
 }

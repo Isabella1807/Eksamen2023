@@ -44,7 +44,7 @@ main {
 }
 
 #navLogoImg{
-    width: 100px;
+    width: 130px;
     height: 80px;
 }
 
@@ -76,7 +76,7 @@ main {
 #navListItems li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 #navListItems li a:hover {
@@ -98,6 +98,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 20px;
     padding: 10px;
+    font-size: 25px;
 }
 
 #burgerMenu {
