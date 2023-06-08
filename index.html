@@ -95,18 +95,16 @@
 
     <div id="mainInfoContainers">
         <div class="contentContainers">
-            <div class="contentImageContainer">
-                <img src="images/p4billeder/roadtrees.png" alt="En vej der har grønne træer på begge sider.">
-            </div>
             <div class="contentTextContainer" id="indexCalculator">
                 <h1>Beregn din besparelse her!</h1>
                 <p>Indtast dit nuværende forbrug</p>
+
+                <!--top 3 input fields-->
                 <div class="indexCalculatorInputContainer">
                     <input type="number" value="20" class="indexCalculatorInput" id="indexKMLInput"
                            placeholder="Din nuværende bils Km/L">
                     <p>Km/L benzin</p>
                 </div>
-
                 <div class="indexOtherCalculatorContainerStuff">
                     <div class="indexCalculatorInputContainer">
                         <input type="number" value="24" class="indexCalculatorInput" id="indexKMDagInput"
@@ -120,9 +118,13 @@
                         <p>gange om ugen</p>
                     </div>
                 </div>
+
+                <!--Calculated placement field-->
                 <div>
                     <p id="indexCalculatedInformationContainer"></p>
                 </div>
+
+                <!-- Car 2 input fields -->
                 <div id="indexCalculatorLine"></div>
                 <div>
                     <div class="indexOtherCalculatorContainerStuff">
@@ -135,32 +137,9 @@
                             <p>kr./L benzin</p>
                         </div>
                     </div>
-                    <div id="indexCarsContainer">
-                        <div class="carsOffersContainers">
-                            <div class="indexCarsImageContainer">
-                                <img src="images/cars/Tesla.PNG" alt="Billede af Tesla Model Y"
-                                     class="indexCalculatorCarOfferContainers">
-                            </div>
-                            <div class="indexCarsTextContainer">
-                                <p>Din årlige besparelse:</p>
-                                <p>22000 KR</p>
-                                <p>Pris:</p>
-                                <p>382000 KR</p>
-                            </div>
-                        </div>
 
-                        <div class="carsOffersContainers">
-                            <div class="indexCarsImageContainer">
-                                <img src="images/cars/Kia.PNG" alt="Billede af Kia EV6"
-                                     class="indexCalculatorCarOfferContainers">
-                            </div>
-                            <div class="indexCarsTextContainer">
-                                <p>Din årlige besparelse:</p>
-                                <p>22000 KR</p>
-                                <p>Pris:</p>
-                                <p>382000 KR</p>
-                            </div>
-                        </div>
+                    <!-- Car placement area -->
+                    <div id="indexCarsContainer">
                         <div class="carsOffersContainers">
                             <div class="indexCarsImageContainer">
                                 <img src="images/cars/BMW.PNG" alt="Billede af BMW i7"

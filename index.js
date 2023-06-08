@@ -82,10 +82,16 @@ const addCarOptionsToContainer = () => {
                          class="indexCalculatorCarOfferContainers">
                 </div>
                 <div class="indexCarsTextContainer">
-                    <p>Din årlige besparelse:</p>
-                    <p>${car.saving} DKK</p>
-                    <p>Pris:</p>
-                    <p>${car.priceDKK} DKK</p>
+                <div id="carNameNPriceContainer">
+                    <p id="carNameP">${car.name}</p>
+                    <p id="carPriceP">Pris: ${car.priceDKK} DKK</p>
+                </div>
+                
+                <div id="carContainerLine"></div>
+               
+                    <p id="carSavingP">${car.saving} DKK</p>
+                    <p id="carSavingH">sparet årligt</p>
+                   
                 </div>
             </div>
         `;
