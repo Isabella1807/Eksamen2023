@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="elements/header.css">
     <script src="elements/header.js" defer></script>
     <link rel="stylesheet" href="elements/footer.css">
+    <link href="pages/info/info.css" rel="stylesheet" type="text/css">
+    <script src="pages/info/info.js" defer></script>
     <script src="index.js" defer></script>
 </head>
 <body>
@@ -25,9 +27,9 @@
                 </div>
                 <div id="navListContainer">
                     <ul id="navListItems">
-                        <li>
-                            <a href="pages/info/info.html">Elbil guiden</a>
-                        </li>
+<!--                        <li>-->
+<!--                            <a href="pages/info/info.html">Elbil guiden</a>-->
+<!--                        </li>-->
                         <li>
                             <a href="pages/opladestationer/opladestationer.html">Opladestationer</a>
                         </li>
@@ -57,10 +59,10 @@
             <div id="mobileNavbarContainer">
                 <div id="myMobileNavBar">
                     <ul id="myMobileNavBarItems">
-                        <li>
-                            <a href="pages/info/info.html">Elbil guiden</a>
-                        </li>
-                        <div class="liLine"></div>
+<!--                        <li>-->
+<!--                            <a href="pages/info/info.html">Elbil guiden</a>-->
+<!--                        </li>-->
+<!--                        <div class="liLine"></div>-->
                         <li>
                             <a href="pages/opladestationer/opladestationer.html">Opladestationer</a>
                         </li>
@@ -193,7 +195,126 @@
             </div>
         </div>
     </div>
+    <div id="infoMainContainer">
+<!--        <div class="infoMainContentContainer" id="infoFirstMainElement">-->
+<!--            <div class="infoContentImageContainer">-->
+<!--                <img class="trees" src="pages/info/infoimg/trees.jpg" alt="trees">-->
+<!--            </div>-->
+<!--            <div class="infoContentTextContainer">-->
+<!--                <h1 class="infoHeadingElement">Hvor grøn er en elbil egentlig?</h1>-->
+<!--                <p class="infoTextElement">-->
+<!--                    Du er sandsynligvis opmærksom på at elbiler ingen CO2 udleder under kørsel, dog udledes der en masse CO2-->
+<!--                    under konstruktionen af en elbil. Afhængigt af hvor strømmen til produktionen og opladning kommer fra,-->
+<!--                    kan elbilen også blive mindre eller mere grøn. <br>-->
+<!--                    Elbiler er ikke perfekte. Men i takt med at produktionen og strøm bliver mere og mere klimavenlig og-->
+<!--                    kommer fra vedvarende energi, bliver elbiler også mere grønne.<br><br>-->
+<!--                    Produktionen af en mellemstor benzinbil udleder ca. 7,2 tons CO2.<br>-->
+<!--                    En elbil på samme størrelse udleder ca. 9,2 tons.<br>-->
+<!--                    Den forskel indhenter elbilen på et års kørsel, hvis den kører på de danske veje.<br>-->
+<!--                    Benzinbilen udleder fortsat CO2 efter produktion.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
 
+        <div class="image-container">
+            <div class="image-wrapper">
+                <div>
+                    <img class="car" src="pages/info/infoimg/3-small-nob.png" alt="">
+                    <div class="desc">Tesla Model 3<br>Rækkevidde: 491 km
+                        <br>Tophastighed: 225 km/t<br>0-100 km/t: 6,1 s<br>Pris: 329.990 kr
+                    </div>
+                </div>
+                <div>
+                    <img class="car" src="pages/info/infoimg/s-small-nob.png" alt="">
+                    <div class="desc">Tesla Model S<br>Rækkevidde: 634 km
+                        <br>Tophastighed: 250 km/t<br>0-100 km/t: 3,2 s<br>Pris: 1.189.296 kr
+                    </div>
+                </div>
+                <div>
+                    <img class="car" src="pages/info/infoimg/x-small-nob.png" alt="">
+                    <div class="desc">Tesla Model X<br>Rækkevidde: 576 km
+                        <br>Tophastighed: 250 km/t<br>0-100 km/t: 3,9 s<br>Pris: 1.269.269 kr
+                    </div>
+                </div>
+                <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button>
+            </div>
+        </div>
+
+<!--        <div class="infoMainContentContainer">-->
+<!--            <div class="infoContentImageContainer">-->
+<!--                <img class="info" src="pages/info/infoimg/info.jpg" alt="trees">-->
+<!--            </div>-->
+<!--            <div class="infoContentTextContainer">-->
+<!--                <h1 class="infoHeadingElement">Hvad koster det at lade din elbil op?</h1>-->
+<!--                <p class="infoTextElement">-->
+<!--                    Prisen af kWh svinger lidt, men regn med at betale mellem 3,19 kr. og 6,50 kr. pr. kWh, når du lader din elbil op ved en ladestander uden abonnement.-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="infoMainContentContainer">
+            <div class="infoContentImageContainer">
+                <img class="chargers" src="pages/info/infoimg/chargers.jpg" alt="trees">
+            </div>
+            <div class="infoContentTextContainer">
+                <h1 class="infoHeadingElement">Hvad skal du vide om ladestandere?</h1>
+                <p class="infoTextElement">
+                    Det nemmeste er at have sin egen ladestander, men hvis der ikke er mulighed for det, er der flere
+                    muligheder for offentlige ladestander.<br>
+                    I Danmark er der forskellige udbydere af ladestander til elbiler.<br>
+                    Disse udbydere er:
+                <ul class="infoChargersList">
+                    <br>
+                    <li>E.on har over 1800 ladestander i hele landet.</li>
+                    <li>Clever har over 1000 ladestander i hele landet.</li>
+                    <li>Ionity har 8 ladestander langs motorveje.</li>
+                    <li>Tesla har 15 Supercharger i landet.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="infoMainContentContainer">
+            <div class="infoContentImageContainer">
+                <img class="abonnementCar" src="pages/info/infoimg/abonnementcar.jpg" alt="charger">
+            </div>
+            <div class="infoContentTextContainer">
+                <h1 class="infoHeadingElement">Abonnementer til ladestationer</h1>
+                <p class="infoTextElement">
+                    Hvis du ikke har en ladeboks i hjemmet, kan det være en god ide at investere i et abonnement hos en
+                    ladestation.<br>
+                    Vær dog opmærksom på at abonnementer hos en ladestation kun gælder hos den specifikke udbyder og der
+                    er forskel på om du kan lade frit eller om du får en billigere pris.<br><br>
+                    E.on drive plus og Tesla har begge et abonnement til 99 kr pr. måned giver adgang til billigere
+                    ladning hos e.on ladestationer.<br><br>
+                    Clever abonnement til 799 kr pr. måned giver adgang til fri ladning hos clever ladestationer - Oven
+                    i dit abonnement udregnes der et energitillæg på baggrund af dit kWh-forbrug pr. måned.
+                </p>
+            </div>
+        </div>
+        <div class="infoMainContentContainer">
+            <div class="infoContentImageContainer">
+                <img class="abonnementCar" src="pages/info/infoimg/abonnementcar.jpg" alt="charger">
+            </div>
+            <div class="infoContentTextContainer">
+                <h1 class="infoHeadingElement">Ladestationer</h1>
+                <p class="infoTextElement">
+                    Når du kører som bilist i en elbil, er der forskellige ladestationer, du vil møde i det danske
+                    landskab.<br>
+                    Disse ladestationer gør sig til forskel på, opladnings hastigheden, stiktypen der bruges eller
+                    størrelsen på stationen.
+                </p>
+            </div>
+        </div>
+
+        <a href="pages/opladestationer/opladestationer.html" id="indexBannerCallToActionButton">
+            <div id="indexBannerButton" class="de-wobble">Se hvor mange ladestationer der er nær dig!</div>
+        </a>
+        <a href="#infoFirstMainElement" id="infoToTopButtonLink">
+            <div id="infoToTopButton">
+                <p>Til toppen</p>
+            </div>
+        </a>
+    </div>
 </main>
 <footer id="footer">
     <div id="footerItemsContainer">
