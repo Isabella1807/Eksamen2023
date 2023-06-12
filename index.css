@@ -47,7 +47,7 @@
 }
 
 .green-letter {
-    color: green;
+    color: #0ca006;
 }
 
 #indexBannerTextContainer {
@@ -62,7 +62,7 @@
 }
 
 #indexBannerTextContainer h1 {
-    font-size: 155px;
+    font-size: 165px;
     font-weight: bold;
 }
 
