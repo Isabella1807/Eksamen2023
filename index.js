@@ -17,10 +17,10 @@ const addTextToInfoContainer = () => {
     const yearlyGas = weeklyGasL * 52;
     calculatedContainer.innerHTML = `Du kører i dag ${Math.round(weeklyKM)} km om ugen på ${Math.round(weeklyGasL)} liter benzin. Dette svarer til ${Math.round(yearlyKM)} km om året eller ${Math.round(yearlyGas)} liter benzin om året`;
 
-
-    // hgjhg jhgjhg gjhgj
+    //Calculate yearly gas price for current car
     const gasCarYearlyCost = yearlyGas * krPrLGas.value;
 
+    //Calculate money saved pr year pr car based on individual car electricity usage
     for (let i = 0; i < listOfCars.length; i++) {
         const car = listOfCars[i];
         const electricYearlyCost = ((yearlyKM * car.WhPrKm) / 1000) * krPrKwH.value;
@@ -68,7 +68,7 @@ const listOfCars = [
 const carsContainer = document.getElementById("indexCarsContainer");
 
 const addCarOptionsToContainer = () => {
-    console.log("fcun virker");
+    console.log("index add car options virker");
 
     carsContainer.innerHTML = '';
 
